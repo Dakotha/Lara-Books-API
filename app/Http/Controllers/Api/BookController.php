@@ -47,10 +47,7 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        // return new BookResource($book);
         return new BookResource(Book::with(['authors'])->find($book->id));
-        // return BookResource::collection($book::with(['authors'])->get());
-        // return Book::with(['authors'])->find($book->id);
     }
 
     /**
