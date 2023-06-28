@@ -1,19 +1,32 @@
-# Lara-Books-API
+# Zadanie rekrutacyjne
+Jest to pierwsza część zadania rekrutacyjnego, polegająca na stworzeniu API dla frontendowej aplikacji pobierającej i wyświetlającej dane.
+
+## Opis zadania
+Zadanie składa się z dwóch części. Najpierw należy stworzyć API serwujące listę książek. Każda książka może należeć do jednej kategorii lub nie należeć do żadnej i do wielu autorów.
+Następnie należy stworzyć aplikację pobierającą i wyświetlającą dane z API.
+
+## Jak uruchomoć projekt?
 
 Aby uruchomić projekt wykonaj następujące kroki:
 
 * Edytuj plik .env.example i zapisz go jako .env
+* Uzupełnij dane dostępowe do wcześniej przygotowanej bazy danych
 
-W terminalu wpisz komendę:
+W terminalu wpisz następujące komendy:
 ```
 composer install
-./vendor/bin/sail up
+php artisan key:generate
+php artisan migrate
 ```
 
-W drugim terminalu wpisz następujące komendy:
+Aby wypełnić bazę danych przykładowymi danymi, wykonaj następującą komendę:
 ```
-./vendor/bin/sail bash
-php artisan migrate
+php artisan db:seed
+```
+
+Aplikacja jest gotowana do działania. Uruchom serwer za pomocą komendy
+```
+php artisan serve
 ```
 
 ## Opis endpointów
