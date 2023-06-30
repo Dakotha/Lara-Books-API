@@ -1,6 +1,18 @@
 # Zadanie rekrutacyjne
 Jest to pierwsza część zadania rekrutacyjnego, polegająca na stworzeniu API dla frontendowej aplikacji pobierającej i wyświetlającej dane.
 
+Aplikację napisałem za pomocą framework'a <a href="https://laravel.com/" target="_blank">Laravel</a>
+
+Demo aplikacji możesz zobaczyć tutaj: <a href="https://lara-books-api.robb.cfolks.pl/" target="_blank">https://lara-books-api.robb.cfolks.pl/</a>
+
+---
+
+Drugą część zadania, czyli aplikację frontend'ową znajdziesz pod adresami:
+
+GITHUB: <a href="https://github.com/Dakotha/Astro-Books-API" target="_blank">https://github.com/Dakotha/Astro-Books-API</a>
+
+DEMO: <a href="https://astro-books-api.robb.cfolks.pl/" target="_blank">https://astro-books-api.robb.cfolks.pl/</a>
+
 ## Opis zadania
 Zadanie składa się z dwóch części. Najpierw należy stworzyć API serwujące listę książek. Każda książka może należeć do jednej kategorii lub nie należeć do żadnej i do wielu autorów.
 Następnie należy stworzyć aplikację pobierającą i wyświetlającą dane z API.
